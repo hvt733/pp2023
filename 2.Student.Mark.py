@@ -63,13 +63,6 @@ class Major:
                 if courseID not in self.mark[studentID]:
                     self.mark[studentID][courseID] = {}
                 self.mark[studentID][courseID] = mark
-
-        def outputStudent(self):
-                for id in self.student:
-                    print(f"{id} :  {self.student[id]['name']['dob']}")
-        def outputMark(self):
-            for id in self.course:
-                print(f"{id} : {self.course[id]['name']}")
 		
     def outputMark(self):
         for studentID in self.mark:
